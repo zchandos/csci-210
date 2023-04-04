@@ -1,0 +1,79 @@
+CREATE TABLE accessories(
+    categoryType VARCHAR(50) PRIMARY KEY,
+    itemID INT
+);
+
+CREATE TABLE weapons(
+    categoryType VARCHAR(50) PRIMARY KEY,
+    itemID INT
+);
+
+CREATE TABLE tools(
+    categoryType VARCHAR(50) PRIMARY KEY,
+    itemID INT
+);
+
+CREATE TABLE furnitureDecorations(
+    categoryType VARCHAR(50) PRIMARY KEY,
+    itemID INT
+);
+
+CREATE TABLE buildingMaterials(
+    categoryType VARCHAR(50) PRIMARY KEY,
+    itemID INT
+);
+
+CREATE TABLE item(
+    itemID INT PRIMARY KEY,
+    name VARCHAR(50),
+    rarity VARCHAR(50),
+    uniqueAttributes VARCHAR(50)
+)
+
+INSERT INTO accessories (categoryType, itemID)
+VALUES
+    (accessories, 1),
+    (accessories, 2),
+    (accessories, 3),
+    (accessories, 4),
+    (accessories, 5);
+
+INSERT INTO weapons (categoryType, itemID)
+VALUES
+    (weapons, 6),
+    (weapons, 7),
+    (weapons, 8),
+    (weapons, 9),
+    (weapons, 10);
+
+INSERT INTO tools (categoryType, itemID)
+VALUES
+    (tools, 11),
+    (tools, 12),
+    (tools, 13),
+    (tools, 14),
+    (tools, 15);
+
+INSERT INTO furnitureDecorations (categoryType, itemID)
+VALUES
+    (furnitureDecorations, 16),
+    (furnitureDecorations, 17),
+    (furnitureDecorations, 18),
+    (furnitureDecorations, 19),
+    (furnitureDecorations, 20);
+
+INSERT INTO buildingMaterials (categoryType, itemID)
+VALUES
+    (buildingMaterials, 21),
+    (buildingMaterials, 22),
+    (buildingMaterials, 23),
+    (buildingMaterials, 24),
+    (buildingMaterials, 25);
+
+INSERT INTO item (itemID, name, rarity, uniqueAttributes)
+VALUES
+    (6, 'CopperSword', 'common', NULL),
+    (7, 'NightsEdge', 'rare', NULL),
+    (8, 'WaterBolt', 'very rare', 'plus 10% damage'),
+    (9, 'TerraBlade', 'extremely rare', 'plus 10% speed'),
+    (10, 'Zenith', 'extraordinarily rare', NULL);
