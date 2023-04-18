@@ -1,0 +1,7 @@
+In my business an example of a transaction would be if a customer would purchase an item from the merchants inventory.
+The sql statement for this would be as follows:
+
+DELETE FROM item
+WHERE itemID = 6;
+
+This is going to remove the item from the item table that has the itemID of 6. This is because the customer purchased it.
